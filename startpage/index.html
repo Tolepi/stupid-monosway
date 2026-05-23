@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <style>
+        /* AQUÍ VA TODO EL CONTENIDO DE TU STYLE.CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: "JetBrainsMono Nerd Font", monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 600px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 72px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 12px;
+            background-color: #1a1a1a;
+            border: 2px solid #555555;
+            color: #ffffff;
+            font-family: inherit;
+            font-size: 16px;
+            outline: none;
+            text-align: center;
+        }
+
+        .search-container input:focus {
+            border-color: #ffffff;
+        }
+
+        .links-grid {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .card {
+            width: 30%;
+            text-align: left;
+            border-left: 2px solid #ffffff;
+            padding-left: 15px;
+        }
+
+        .card h3 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .card a {
+            display: block;
+            color: #aaaaaa;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .card a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">󰣇</div>
+        <div class="search-container">
+            <form action="https://www.google.com/search" method="get">
+                <input type="text" name="q" placeholder="What sort of ending are you wishing for?..." autofocus autocomplete="off">
+            </form>
+        </div>
+        <div class="links-grid">
+            <div class="card">
+                <h3>Comunidad</h3>
+                <a href="https://reddit.com/r/unixporn">r/unixporn</a>
+                <a href="https://github.com">GitHub</a>
+            </div>
+            <div class="card">
+                <h3>Arch Linux</h3>
+                <a href="https://bbs.archlinux.org">Arch Forums</a>
+                <a href="https://wiki.archlinux.org">Documentation</a>
+            </div>
+            <div class="card">
+                <h3>Utilidades</h3>
+                <a href="https://youtube.com">YouTube</a>
+                <a href="https://mail.google.com">Gmail</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
