@@ -1,0 +1,49 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 28,
+    "modules-left": ["custom/fedora", "sway/workspaces", "sway/mode"],
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "memory", "battery", "pulseaudio", "custom/power"],
+
+    "custom/fedora": {
+        "format": " 󰣇 ",
+        "on-click": "wofi --show drun",
+        "tooltip": false
+    },
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}"
+    },
+    "clock": {
+        "format": "{:%Y-%m-%d  %H:%M}",
+        "tooltip": false
+    },
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": " {percentage}%",
+        "tooltip": false
+    },
+    "battery": {
+        "states": { "critical": 15 },
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "tooltip": false
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "  Mute",
+        "format-icons": { "default": ["", ""] },
+        "on-click": "pavucontrol",
+        "tooltip": false
+    },
+    "custom/power": {
+        "format": "⏻ ",
+        "on-click": "swaynag -t warning -m 'Acciones de Energía' -B 'Apagar' 'systemctl poweroff' -B 'Reiniciar' 'systemctl reboot' -B 'Cerrar Sesión' 'swaymsg exit'",
+        "tooltip": false
+    }
+}
