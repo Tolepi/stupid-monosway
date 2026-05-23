@@ -15,6 +15,7 @@ stuufuffff:
 for the firefox startpage and how to apply:
 - go to about:preferences#home and change your default home url to
 - file:///home/username/.config/startpage/index.html
+
 replace "username" with your well, username duhhh
 
 previews:
