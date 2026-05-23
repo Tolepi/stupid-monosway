@@ -4,6 +4,7 @@ window {
     background-color: #000000;
     border-radius: 0px;
     font-family: "Terminess Nerd Font";
+    font-size: 15px;
 }
 
 #outer-box {
